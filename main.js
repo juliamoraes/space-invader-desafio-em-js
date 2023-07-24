@@ -103,7 +103,7 @@ function updatePlayer(){
     STATE.x_pos += 3;
   } if(STATE.shoot && STATE.cooldown == 0){
     createLaser($container, STATE.x_pos - STATE.spaceship_width/2, STATE.y_pos);
-    STATE.cooldown = 30;
+    STATE.cooldown = 20;
   }
   const $player = document.querySelector(".player");
   setPosition($player, bound(STATE.x_pos), STATE.y_pos-10);
